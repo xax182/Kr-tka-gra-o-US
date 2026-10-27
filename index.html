@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Uciekaj przed US">
+<meta name="theme-color" content="#5c94fc">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>Uciekaj przed US</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #111; overflow: hidden;
+    touch-action: none; -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+  #game { position: fixed; inset: 0; }
+  #rotate { display: none; position: fixed; inset: 0; z-index: 10; background: #111; color: #fff;
+    font: 700 22px/1.4 -apple-system, Arial, sans-serif; text-align: center; align-items: center; justify-content: center; padding: 24px; }
+  @media (orientation: portrait) { #rotate { display: flex; } }
+</style>
+</head>
+<body>
+<div id="game"></div>
+<div id="rotate">Obróć iPada poziomo,<br>żeby uciekać przed urzędem 📱↻</div>
+<script src="lib/phaser.min.js"></script>
+<script src="levels.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

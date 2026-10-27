@@ -1,0 +1,10 @@
+{
+  "name": "Uciekaj przed US",
+  "short_name": "Uciekaj przed US",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#111111",
+  "theme_color": "#5c94fc",
+  "icons": [{ "src": "icon-180.png", "sizes": "180x180", "type": "image/png" }]
+}
